@@ -1,0 +1,8 @@
+// 'api'を使うために必要
+apply plugin: 'java-library'
+
+dependencies {
+    // apiだと依存関係を伝播させる(fooからもcommons-langが見える)
+    api 'org.apache.commons:commons-lang3:3.7'
+    // implementation 'org.apache.commons:commons-lang3:3.7'
+}

@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+mainClassName = 'foo.Foo'
+
+dependencies {
+    implementation project(':bar')
+}
+
+task helloWorld  {
+    description = "こんにちは！します。"
+    doLast {
+        println "Hello, world!"
+    }
+}
